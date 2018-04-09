@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :budgets
   get 'welcome/index'
 
   get 'welcome/contact'

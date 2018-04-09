@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @budget.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @budget.address %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @budget.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @budget.phone %>
+</p>
+
+<p>
+  <strong>Observations:</strong>
+  <%= @budget.observations %>
+</p>
+
+<p>
+  <strong>Workday:</strong>
+  <%= @budget.workday %>
+</p>
+
+<%= link_to 'Edit', edit_budget_path(@budget) %> |
+<%= link_to 'Back', budgets_path %>

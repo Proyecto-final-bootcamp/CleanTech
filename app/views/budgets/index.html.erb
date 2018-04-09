@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Budgets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Observations</th>
+      <th>Workday</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @budgets.each do |budget| %>
+      <tr>
+        <td><%= budget.name %></td>
+        <td><%= budget.address %></td>
+        <td><%= budget.email %></td>
+        <td><%= budget.phone %></td>
+        <td><%= budget.observations %></td>
+        <td><%= budget.workday %></td>
+        <td><%= link_to 'Show', budget %></td>
+        <td><%= link_to 'Edit', edit_budget_path(budget) %></td>
+        <td><%= link_to 'Destroy', budget, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Budget', new_budget_path %>
