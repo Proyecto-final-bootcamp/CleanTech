@@ -58,4 +58,4 @@ gem 'bootstrap', '~> 4.0.0'
 #Jquery
 gem 'jquery-rails'
 
-
+gem 'rails-i18n'

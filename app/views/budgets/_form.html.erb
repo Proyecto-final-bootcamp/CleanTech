@@ -11,33 +11,43 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :budget_name %>
+  <div class="form-group row">
+    <%= form.label :nombre, class: "col-sm-2 col-form-label" %>
+    <div class="col-sm-10">
+      <%= form.text_field :name, id: :budget_name, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <%= form.label :dirección, class: "col-sm-2 col-form-label" %>
+    <div class="col-sm-10">
+      <%= form.text_field :address, id: :budget_address, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <%= form.label :email, class: "col-sm-2 col-form-label" %>
+    <div class="col-sm-10">
+      <%= form.text_field :email, id: :budget_email, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <%= form.label :Teléfono, class: "col-sm-2 col-form-label" %>
+    <div class="col-sm-10">
+      <%= form.text_field :phone, id: :budget_phone, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <%= form.label :Observaciones, class: "col-sm-2 col-form-label" %>
+    <div class="col-sm-10">
+      <%= form.text_area :observations, id: :budget_observations, class: "form-control" %>
+    </div>
   </div>
 
   <div class="field">
-    <%= form.label :address %>
-    <%= form.text_field :address, id: :budget_address %>
-  </div>
-
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email, id: :budget_email %>
-  </div>
-
-  <div class="field">
-    <%= form.label :phone %>
-    <%= form.text_field :phone, id: :budget_phone %>
-  </div>
-
-  <div class="field">
-    <%= form.label :observations %>
-    <%= form.text_area :observations, id: :budget_observations %>
-  </div>
-
-  <div class="field">
-    <%= form.label :workday %>
+    <%= form.label :Día_de_trabajo %>
     <%= form.datetime_select :workday, id: :budget_workday %>
   </div>
 
