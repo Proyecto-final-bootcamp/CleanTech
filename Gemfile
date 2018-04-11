@@ -59,3 +59,5 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 
 gem 'rails-i18n'
+
+gem 'figaro'

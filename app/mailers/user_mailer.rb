@@ -1,11 +1,10 @@
 class UserMailer < ApplicationMailer
 
-  default from: 'notifications@example.com'
+  default from: 'bootcampwi@gmail.com'
 
-    def welcome_email(user)
-      @user = user
-      @url  = 'http://example.com/login'
-      mail(to: @user.email, subject: 'Welcome to My Awesome Site')
+    def welcome_email(budget)
+      @budget = budget
+      mail(to: "wimeleth85@gmail.com", subject: 'Se ha creado un presupuesto nuevo')
     end
 
 end

@@ -28,6 +28,7 @@ class BudgetsController < ApplicationController
 
     respond_to do |format|
       if @budget.save
+        UserMailer.welcome_email(@budget).deliver_now
         format.html { redirect_to @budget, notice: 'Budget was successfully created.' }
         format.json { render :show, status: :created, location: @budget }
       else
