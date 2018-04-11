@@ -6,3 +6,6 @@ es:
       budget:
         name: "Nombre"
         address: "Dirección"
+        phone: "Teléfono"
+        observations: "Observaciones"
+        workday: "Día de trabajo"
