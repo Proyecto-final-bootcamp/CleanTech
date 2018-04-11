@@ -2,4 +2,7 @@ es:
   activerecord:
     models:
       budget: "Presupuesto"
-      
+    attributes:
+      budget:
+        name: "Nombre"
+        address: "Dirección"
