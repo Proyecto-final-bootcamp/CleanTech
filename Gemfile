@@ -61,3 +61,7 @@ gem 'jquery-rails'
 gem 'rails-i18n'
 
 gem 'figaro'
+
+#devise-i18n
+gem 'devise'
+gem 'devise-i18n'
