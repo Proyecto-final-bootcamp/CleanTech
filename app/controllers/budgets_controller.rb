@@ -29,7 +29,7 @@ class BudgetsController < ApplicationController
     respond_to do |format|
       if @budget.save
         UserMailer.welcome_email(@budget).deliver_now
-        format.html { redirect_to @budget, notice: 'Budget was successfully created.' }
+        format.html { redirect_to @budget, notice: 'Su presupuesto ha sido correctamente creado' }
         format.json { render :show, status: :created, location: @budget }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class BudgetsController < ApplicationController
   def update
     respond_to do |format|
       if @budget.update(budget_params)
-        format.html { redirect_to @budget, notice: 'Budget was successfully updated.' }
+        format.html { redirect_to @budget, notice: 'Su presupuesto ha sido actualizado' }
         format.json { render :show, status: :ok, location: @budget }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class BudgetsController < ApplicationController
   def destroy
     @budget.destroy
     respond_to do |format|
-      format.html { redirect_to budgets_url, notice: 'Budget was successfully destroyed.' }
+      format.html { redirect_to budgets_url, notice: 'Presupuesto destruido' }
       format.json { head :no_content }
     end
   end
